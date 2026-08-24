@@ -1,0 +1,13 @@
+baseline_mean,change_percent,direction,interpretation,metric,proposed_mean,scheduler
+0.5899242263149019,0.0,higher-is-better,unchanged,completion_ratio,0.5899242263149019,Congestion-Aware
+0,,lower-is-better,not available,total_dropped,0,Congestion-Aware
+0.0,,lower-is-better,not available,average_congestion_ratio,0.0,Congestion-Aware
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.0,Congestion-Aware
+2.0849466709760827,0.0,lower-is-better,unchanged,energy_per_completed_task,2.0849466709760827,Congestion-Aware
+34.160000000000004,0.0,lower-is-better,unchanged,total_energy_consumed,34.160000000000004,Congestion-Aware
+0.5899242263149019,64.26519884662773,higher-is-better,improvement,completion_ratio,0.9690402034006038,Energy-Aware Congestion
+0,,lower-is-better,not available,total_dropped,0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,average_congestion_ratio,0.0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.0,Energy-Aware Congestion
+2.0849466709760827,3.513394375220434,lower-is-better,improvement,energy_per_completed_task,2.0116942719116633,Energy-Aware Congestion
+34.160000000000004,-60.07025761124122,lower-is-better,regression,total_energy_consumed,54.68000000000001,Energy-Aware Congestion

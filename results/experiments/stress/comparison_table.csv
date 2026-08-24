@@ -1,0 +1,8 @@
+Baseline,Congestion-Aware,Energy-Aware Congestion,metric
+0.5333 ± 0.05774,1 ± 0,1 ± 0,Peak Congestion Ratio
+120 ± 24.33,30 ± 12.29,24 ± 11.27,Dropped Tasks
+0.3922 ± 0.005752,0.6278 ± 0.02294,0.5867 ± 0.01266,Average Queue Utilization
+298.7 ± 23.76,388.6 ± 3.291,400 ± 0,Total Energy
+2.037 ± 0.01176,2.003 ± 0.0009158,2 ± 0,Energy / Completed Task
+0.4688 ± 0.05475,0.6191 ± 0.02549,0.6382 ± 0.023,Completion Ratio
+0.08367 ± 0.0179,0.08833 ± 0.008963,0.1357 ± 0.02346,Runtime (seconds)
