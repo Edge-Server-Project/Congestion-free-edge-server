@@ -1,0 +1,49 @@
+baseline_mean,change_percent,direction,interpretation,metric,proposed_mean,scheduler
+0.5899242263149019,0.0,higher-is-better,unchanged,completion_ratio,0.5899242263149019,Congestion-Aware
+0,,lower-is-better,not available,total_dropped,0,Congestion-Aware
+0.0,,lower-is-better,not available,average_congestion_ratio,0.0,Congestion-Aware
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.0,Congestion-Aware
+2.0849466709760827,0.0,lower-is-better,unchanged,energy_per_completed_task,2.0849466709760827,Congestion-Aware
+34.160000000000004,0.0,lower-is-better,unchanged,total_energy_consumed,34.160000000000004,Congestion-Aware
+0.5899242263149019,-37.39440696662092,higher-is-better,regression,completion_ratio,0.3693255603320177,Congestion-Aware
+0,,lower-is-better,not available,total_dropped,0,Congestion-Aware
+0.0,,lower-is-better,not available,average_congestion_ratio,0.0,Congestion-Aware
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.0,Congestion-Aware
+2.0849466709760827,2.993937560207204,lower-is-better,improvement,energy_per_completed_task,2.02252466948344,Congestion-Aware
+34.160000000000004,-46.16510538641684,lower-is-better,regression,total_energy_consumed,49.93,Congestion-Aware
+0.5899242263149019,-63.65936348518127,higher-is-better,regression,completion_ratio,0.2143822187979552,Congestion-Aware
+0,,lower-is-better,not available,total_dropped,0,Congestion-Aware
+0.0,,lower-is-better,not available,average_congestion_ratio,0.0,Congestion-Aware
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.0,Congestion-Aware
+2.0849466709760827,3.807542036301062,lower-is-better,improvement,energy_per_completed_task,2.0055614500442087,Congestion-Aware
+34.160000000000004,-67.30093676814987,lower-is-better,regression,total_energy_consumed,57.15,Congestion-Aware
+0.5899242263149019,-80.91643921284401,higher-is-better,regression,completion_ratio,0.11257854832696394,Congestion-Aware
+0,,lower-is-better,not available,total_dropped,0,Congestion-Aware
+0.0,,lower-is-better,not available,average_congestion_ratio,0.08,Congestion-Aware
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.19,Congestion-Aware
+2.0849466709760827,4.041207239330661,lower-is-better,improvement,energy_per_completed_task,2.0006896551724136,Congestion-Aware
+34.160000000000004,-74.53161592505853,lower-is-better,regression,total_energy_consumed,59.62,Congestion-Aware
+0.5899242263149019,64.26519884662773,higher-is-better,improvement,completion_ratio,0.9690402034006038,Energy-Aware Congestion
+0,,lower-is-better,not available,total_dropped,0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,average_congestion_ratio,0.0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.0,Energy-Aware Congestion
+2.0849466709760827,3.513394375220434,lower-is-better,improvement,energy_per_completed_task,2.0116942719116633,Energy-Aware Congestion
+34.160000000000004,-60.07025761124122,lower-is-better,regression,total_energy_consumed,54.68000000000001,Energy-Aware Congestion
+0.5899242263149019,-24.131632441296166,higher-is-better,regression,completion_ratio,0.44756588033842964,Energy-Aware Congestion
+0,,lower-is-better,not available,total_dropped,0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,average_congestion_ratio,0.0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.0,Energy-Aware Congestion
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Energy-Aware Congestion
+34.160000000000004,-75.64402810304448,lower-is-better,regression,total_energy_consumed,60.0,Energy-Aware Congestion
+0.5899242263149019,-61.736247278139444,higher-is-better,regression,completion_ratio,0.22572714720348308,Energy-Aware Congestion
+0,,lower-is-better,not available,total_dropped,0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,average_congestion_ratio,0.0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.0,Energy-Aware Congestion
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Energy-Aware Congestion
+34.160000000000004,-75.64402810304448,lower-is-better,regression,total_energy_consumed,60.0,Energy-Aware Congestion
+0.5899242263149019,-80.79023261003687,higher-is-better,regression,completion_ratio,0.11332307165213243,Energy-Aware Congestion
+0,,lower-is-better,not available,total_dropped,0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,average_congestion_ratio,0.0,Energy-Aware Congestion
+0.0,,lower-is-better,not available,peak_congestion_ratio,0.0,Energy-Aware Congestion
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Energy-Aware Congestion
+34.160000000000004,-75.64402810304448,lower-is-better,regression,total_energy_consumed,60.0,Energy-Aware Congestion

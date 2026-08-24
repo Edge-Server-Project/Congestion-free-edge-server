@@ -1,0 +1,21 @@
+Baseline,Congestion-Aware,Energy-Aware Congestion,metric
+0.5899 +/- 0.09186,0.5899 +/- 0.09186,0.969 +/- 0.05061,Completion Ratio
+28.2 +/- 3.967,28.2 +/- 3.967,28.2 +/- 3.967,Total Generated
+16.4 +/- 1.713,16.4 +/- 1.713,27.2 +/- 3.011,Total Completed
+0 +/- 0,0 +/- 0,0 +/- 0,Total Dropped
+0 +/- 0,0 +/- 0,0 +/- 0,Drop Ratio
+0 +/- 0,0 +/- 0,0 +/- 0,Average Congestion Ratio
+0 +/- 0,0 +/- 0,0 +/- 0,Peak Congestion Ratio
+0.136 +/- 0.054,0.136 +/- 0.054,0.036 +/- 0.008433,Maximum Queue Utilization
+0.02747 +/- 0.004606,0.02747 +/- 0.004606,0.02 +/- 0.003281,Average Queue Utilization
+0 +/- 0,0 +/- 0,0 +/- 0,Total Congested Node-Rounds
+0 +/- 0,0 +/- 0,0 +/- 0,Peak Congested Nodes
+0.8267 +/- 0.2298,0.8267 +/- 0.2298,0.09333 +/- 0.07666,Average Queue
+5.8 +/- 2.7,5.8 +/- 2.7,0.8 +/- 0.4216,Maximum Queue
+0 +/- 0,0 +/- 0,0 +/- 0,Minimum Queue
+1.335 +/- 0.4248,1.335 +/- 0.4248,0.1678 +/- 0.11,Queue Std Dev
+34.16 +/- 3.254,34.16 +/- 3.254,54.68 +/- 5.721,Total Energy
+2.085 +/- 0.02158,2.085 +/- 0.02158,2.012 +/- 0.01412,Energy / Completed Task
+996.6 +/- 0.3254,996.6 +/- 0.3254,994.5 +/- 0.5721,Average Remaining Energy
+994 +/- 0,994 +/- 0,994 +/- 0,Minimum Remaining Energy
+0.0357 +/- 0.02861,0.014 +/- 0.01553,0.0532 +/- 0.06354,Runtime (seconds)
