@@ -184,8 +184,10 @@ scheduler, workload mode, seed, scale, configuration, per-round history, and
 final metrics. Aggregated JSON/CSV files contain mean and sample standard
 deviation; a one-run group has standard deviation zero. Results are written
 under `results/experiments/<mode>/`; comparison tables and directional
-improvement tables are under `results/summaries/<mode>/`, and twelve separate
-PNG figures are under `results/plots/<mode>/`.
+improvement tables are under `results/summaries/<mode>/`. Normal and stress
+runs produce twelve PNG figures under `results/plots/<mode>/`; scalability
+runs additionally produce a separate eight-chart scheduler comparison set
+for every configured device scale, plus four device-vs-metric trend charts.
 
 Evaluation formulas use explicit zero-denominator handling: completion ratio
 is completed/generated, drop ratio is dropped/generated, throughput is

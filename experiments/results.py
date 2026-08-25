@@ -48,7 +48,9 @@ class ResultProcessor:
     """Persist raw records and derive reproducible summaries without running simulations."""
 
     def __init__(self, output_directory: str | Path = "results/experiments") -> None:
-        self.output_directory = Path(output_directory)
+        # Resolve once so CSV/JSON/PNG output is always written beside the
+        # project results directory, regardless of the shell's current path.
+        self.output_directory = Path(output_directory).resolve()
         self.results_root = self.output_directory.parent
         self.plots_directory = self.results_root / "plots"
         self.summaries_directory = self.results_root / "summaries"
@@ -262,32 +264,58 @@ class ResultProcessor:
             ("scheduler_total_energy.png", "Scheduler vs Total Energy Consumed", "total_energy_consumed_mean"),
         )
         first_scale = min(row["num_iot_devices"] for row in rows)
-        scale_rows = [row for row in rows if row["num_iot_devices"] == first_scale]
-        ordered_schedulers = _scheduler_order(scale_rows)
-        for filename, title, metric in scheduler_metrics:
-            fig, axis = plt.subplots(figsize=(7, 4))
-            values = [
-                next((row.get(metric) for row in scale_rows if row["scheduler"] == name), 0.0) or 0.0
-                for name in ordered_schedulers
-            ]
-            errors = [
-                next((row.get(metric.replace("_mean", "_std")) for row in scale_rows if row["scheduler"] == name), 0.0) or 0.0
-                for name in ordered_schedulers
-            ]
-            axis.bar(
-                ordered_schedulers,
-                values,
-                yerr=errors if any(errors) else None,
-                capsize=4,
-            )
-            axis.set_title(title)
-            axis.set_ylabel("Mean ± Std")
-            axis.tick_params(axis="x", rotation=20)
-            fig.tight_layout()
-            path = graph_dir / filename
-            fig.savefig(path, dpi=140)
-            plt.close(fig)
-            paths.append(path)
+        scales = sorted({row["num_iot_devices"] for row in rows})
+        comparison_scales = scales if mode == "scalability" else [first_scale]
+        if mode == "scalability":
+            # Remove superseded single-scale scheduler charts and stale scale
+            # variants before writing the current configured scale matrix.
+            for old_path in graph_dir.glob("scheduler_*.png"):
+                old_path.unlink(missing_ok=True)
+        for scale in comparison_scales:
+            scale_rows = [row for row in rows if row["num_iot_devices"] == scale]
+            ordered_schedulers = _scheduler_order(scale_rows)
+            for filename, title, metric in scheduler_metrics:
+                fig, axis = plt.subplots(figsize=(7, 4))
+                values = [
+                    next((row.get(metric) for row in scale_rows if row["scheduler"] == name), 0.0) or 0.0
+                    for name in ordered_schedulers
+                ]
+                errors = [
+                    next((row.get(metric.replace("_mean", "_std")) for row in scale_rows if row["scheduler"] == name), 0.0) or 0.0
+                    for name in ordered_schedulers
+                ]
+                axis.bar(
+                    ordered_schedulers,
+                    values,
+                    yerr=errors if any(errors) else None,
+                    capsize=4,
+                )
+                axis.set_title(f"{title} ({scale} IoT devices)")
+                axis.set_ylabel("Mean ± Std")
+                axis.tick_params(axis="x", rotation=20)
+                # Keep flat zero-valued comparisons readable instead of allowing
+                # matplotlib to choose a small negative range around zero.
+                if not any(values) and not any(errors):
+                    axis.set_ylim(0, 1)
+                    axis.text(
+                        0.5,
+                        0.5,
+                        "All values are zero",
+                        transform=axis.transAxes,
+                        ha="center",
+                        va="center",
+                        color="dimgray",
+                    )
+                else:
+                    axis.set_ylim(bottom=0)
+                fig.tight_layout()
+                if mode == "scalability":
+                    path = graph_dir / f"{Path(filename).stem}_{scale}_devices.png"
+                else:
+                    path = graph_dir / filename
+                fig.savefig(path, dpi=140)
+                plt.close(fig)
+                paths.append(path)
 
         scale_metrics = (
             ("devices_dropped_tasks.png", "IoT Devices vs Dropped Tasks", "total_dropped_mean"),
@@ -320,6 +348,22 @@ class ResultProcessor:
             axis.set_xlabel("IoT devices")
             axis.set_ylabel("Mean ± Std")
             axis.legend()
+            if not any(
+                (row.get(metric) or 0.0)
+                for row in rows
+            ):
+                axis.set_ylim(0, 1)
+                axis.text(
+                    0.5,
+                    0.5,
+                    "All values are zero",
+                    transform=axis.transAxes,
+                    ha="center",
+                    va="center",
+                    color="dimgray",
+                )
+            else:
+                axis.set_ylim(bottom=0)
             fig.tight_layout()
             path = graph_dir / filename
             fig.savefig(path, dpi=140)
@@ -352,7 +396,18 @@ class ResultProcessor:
             writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore")
             writer.writeheader()
             for row in rows:
-                writer.writerow({key: json.dumps(value) if isinstance(value, (dict, list)) else value for key, value in row.items()})
+                writer.writerow(
+                    {
+                        key: (
+                            "N/A"
+                            if value is None
+                            else json.dumps(value)
+                            if isinstance(value, (dict, list))
+                            else value
+                        )
+                        for key, value in row.items()
+                    }
+                )
 
 
 def _scheduler_order(rows: Iterable[dict]) -> list[str]:
