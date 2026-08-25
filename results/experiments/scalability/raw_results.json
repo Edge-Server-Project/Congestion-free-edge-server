@@ -170,7 +170,7 @@
     "queue_load_stddev": 1.259276131771216,
     "queued_tasks": 12,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.015000000013969839,
+    "runtime_seconds": 0.0,
     "scheduler": "Baseline",
     "seed": 42,
     "task_workload": [
@@ -836,7 +836,7 @@
     "queue_load_stddev": 0.286085856498528,
     "queued_tasks": 0,
     "redirected_tasks": 29,
-    "runtime_seconds": 0.06299999996554106,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Energy-Aware Congestion",
     "seed": 42,
     "task_workload": [
@@ -1169,7 +1169,7 @@
     "queue_load_stddev": 1.6035834305228445,
     "queued_tasks": 11,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0,
+    "runtime_seconds": 0.06299999996554106,
     "scheduler": "Baseline",
     "seed": 43,
     "task_workload": [
@@ -1492,7 +1492,7 @@
     "queue_load_stddev": 1.6035834305228445,
     "queued_tasks": 11,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.0,
     "scheduler": "Congestion-Aware",
     "seed": 43,
     "task_workload": [
@@ -1815,7 +1815,7 @@
     "queue_load_stddev": 0.15275252316519466,
     "queued_tasks": 0,
     "redirected_tasks": 26,
-    "runtime_seconds": 0.015000000013969839,
+    "runtime_seconds": 0.0,
     "scheduler": "Energy-Aware Congestion",
     "seed": 43,
     "task_workload": [
@@ -2138,7 +2138,7 @@
     "queue_load_stddev": 1.3666603812088105,
     "queued_tasks": 12,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.03100000007543713,
     "scheduler": "Baseline",
     "seed": 44,
     "task_workload": [
@@ -2471,7 +2471,7 @@
     "queue_load_stddev": 1.3666603812088105,
     "queued_tasks": 12,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03200000000651926,
+    "runtime_seconds": 0.0,
     "scheduler": "Congestion-Aware",
     "seed": 44,
     "task_workload": [
@@ -2804,7 +2804,7 @@
     "queue_load_stddev": 0.286085856498528,
     "queued_tasks": 3,
     "redirected_tasks": 26,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.0,
     "scheduler": "Energy-Aware Congestion",
     "seed": 44,
     "task_workload": [
@@ -3137,7 +3137,7 @@
     "queue_load_stddev": 1.2478293741589326,
     "queued_tasks": 11,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Baseline",
     "seed": 45,
     "task_workload": [
@@ -3455,7 +3455,7 @@
     "queue_load_stddev": 1.2478293741589326,
     "queued_tasks": 11,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.030999999959021807,
+    "runtime_seconds": 0.01600000006146729,
     "scheduler": "Congestion-Aware",
     "seed": 45,
     "task_workload": [
@@ -3773,7 +3773,7 @@
     "queue_load_stddev": 0.09999999999999999,
     "queued_tasks": 0,
     "redirected_tasks": 24,
-    "runtime_seconds": 0.0,
+    "runtime_seconds": 0.015999999945051968,
     "scheduler": "Energy-Aware Congestion",
     "seed": 45,
     "task_workload": [
@@ -4091,7 +4091,7 @@
     "queue_load_stddev": 1.4322599595346113,
     "queued_tasks": 17,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.015000000013969839,
+    "runtime_seconds": 0.0,
     "scheduler": "Baseline",
     "seed": 46,
     "task_workload": [
@@ -4449,7 +4449,7 @@
     "queue_load_stddev": 1.4322599595346113,
     "queued_tasks": 17,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Congestion-Aware",
     "seed": 46,
     "task_workload": [
@@ -4807,7 +4807,7 @@
     "queue_load_stddev": 0.3,
     "queued_tasks": 5,
     "redirected_tasks": 31,
-    "runtime_seconds": 0.21899999992456287,
+    "runtime_seconds": 0.03200000000651926,
     "scheduler": "Energy-Aware Congestion",
     "seed": 46,
     "task_workload": [
@@ -5165,7 +5165,7 @@
     "queue_load_stddev": 2.1678588966989136,
     "queued_tasks": 17,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.062000000034458935,
+    "runtime_seconds": 0.0779999999795109,
     "scheduler": "Baseline",
     "seed": 47,
     "task_workload": [
@@ -5503,7 +5503,7 @@
     "queue_load_stddev": 2.1678588966989136,
     "queued_tasks": 17,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.015000000013969839,
+    "runtime_seconds": 0.0,
     "scheduler": "Congestion-Aware",
     "seed": 47,
     "task_workload": [
@@ -5841,7 +5841,7 @@
     "queue_load_stddev": 0.19999999999999998,
     "queued_tasks": 1,
     "redirected_tasks": 28,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Energy-Aware Congestion",
     "seed": 47,
     "task_workload": [
@@ -6179,7 +6179,7 @@
     "queue_load_stddev": 1.2225589747230814,
     "queued_tasks": 10,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.06299999996554106,
+    "runtime_seconds": 0.01600000006146729,
     "scheduler": "Baseline",
     "seed": 48,
     "task_workload": [
@@ -6775,7 +6775,7 @@
     "queue_load_stddev": 0.0,
     "queued_tasks": 0,
     "redirected_tasks": 23,
-    "runtime_seconds": 0.03200000000651926,
+    "runtime_seconds": 0.045999999972991645,
     "scheduler": "Energy-Aware Congestion",
     "seed": 48,
     "task_workload": [
@@ -7073,7 +7073,7 @@
     "queue_load_stddev": 0.42996598285221194,
     "queued_tasks": 4,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.0,
     "scheduler": "Baseline",
     "seed": 49,
     "task_workload": [
@@ -7361,7 +7361,7 @@
     "queue_load_stddev": 0.42996598285221194,
     "queued_tasks": 4,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0,
+    "runtime_seconds": 0.01600000006146729,
     "scheduler": "Congestion-Aware",
     "seed": 49,
     "task_workload": [
@@ -7649,7 +7649,7 @@
     "queue_load_stddev": 0.0,
     "queued_tasks": 0,
     "redirected_tasks": 21,
-    "runtime_seconds": 0.0,
+    "runtime_seconds": 0.0470000000204891,
     "scheduler": "Energy-Aware Congestion",
     "seed": 49,
     "task_workload": [
@@ -7937,7 +7937,7 @@
     "queue_load_stddev": 1.2822589620680622,
     "queued_tasks": 11,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.06199999991804361,
+    "runtime_seconds": 0.0,
     "scheduler": "Baseline",
     "seed": 50,
     "task_workload": [
@@ -8583,7 +8583,7 @@
     "queue_load_stddev": 0.15275252316519466,
     "queued_tasks": 0,
     "redirected_tasks": 21,
-    "runtime_seconds": 0.046999999904073775,
+    "runtime_seconds": 0.0470000000204891,
     "scheduler": "Energy-Aware Congestion",
     "seed": 50,
     "task_workload": [
@@ -8906,7 +8906,7 @@
     "queue_load_stddev": 1.3410701380658943,
     "queued_tasks": 13,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.015999999945051968,
     "scheduler": "Baseline",
     "seed": 51,
     "task_workload": [
@@ -9234,7 +9234,7 @@
     "queue_load_stddev": 1.3410701380658943,
     "queued_tasks": 13,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Congestion-Aware",
     "seed": 51,
     "task_workload": [
@@ -9562,7 +9562,7 @@
     "queue_load_stddev": 0.19999999999999998,
     "queued_tasks": 1,
     "redirected_tasks": 26,
-    "runtime_seconds": 0.046999999904073775,
+    "runtime_seconds": 0.0779999999795109,
     "scheduler": "Energy-Aware Congestion",
     "seed": 51,
     "task_workload": [
@@ -9890,7 +9890,7 @@
     "queue_load_stddev": 4.567035672813501,
     "queued_tasks": 53,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.015000000013969839,
+    "runtime_seconds": 0.0,
     "scheduler": "Baseline",
     "seed": 42,
     "task_workload": [
@@ -11006,7 +11006,7 @@
     "queue_load_stddev": 0.3333333333333333,
     "queued_tasks": 45,
     "redirected_tasks": 70,
-    "runtime_seconds": 0.06299999996554106,
+    "runtime_seconds": 0.03200000000651926,
     "scheduler": "Energy-Aware Congestion",
     "seed": 42,
     "task_workload": [
@@ -11564,7 +11564,7 @@
     "queue_load_stddev": 2.674982226478521,
     "queued_tasks": 43,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0470000000204891,
+    "runtime_seconds": 0.09299999999348074,
     "scheduler": "Baseline",
     "seed": 43,
     "task_workload": [
@@ -12087,7 +12087,7 @@
     "queue_load_stddev": 2.674982226478521,
     "queued_tasks": 43,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0470000000204891,
+    "runtime_seconds": 0.0,
     "scheduler": "Congestion-Aware",
     "seed": 43,
     "task_workload": [
@@ -12610,7 +12610,7 @@
     "queue_load_stddev": 0.39663264951887856,
     "queued_tasks": 38,
     "redirected_tasks": 60,
-    "runtime_seconds": 0.1559999999590218,
+    "runtime_seconds": 0.015999999945051968,
     "scheduler": "Energy-Aware Congestion",
     "seed": 43,
     "task_workload": [
@@ -13133,7 +13133,7 @@
     "queue_load_stddev": 3.268189763685513,
     "queued_tasks": 50,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0470000000204891,
+    "runtime_seconds": 0.062000000034458935,
     "scheduler": "Baseline",
     "seed": 44,
     "task_workload": [
@@ -14239,7 +14239,7 @@
     "queue_load_stddev": 0.4632993161855452,
     "queued_tasks": 44,
     "redirected_tasks": 69,
-    "runtime_seconds": 0.062000000034458935,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Energy-Aware Congestion",
     "seed": 44,
     "task_workload": [
@@ -15305,7 +15305,7 @@
     "queue_load_stddev": 3.6141446779547235,
     "queued_tasks": 41,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0,
+    "runtime_seconds": 0.03100000007543713,
     "scheduler": "Congestion-Aware",
     "seed": 45,
     "task_workload": [
@@ -15818,7 +15818,7 @@
     "queue_load_stddev": 0.48271850601740657,
     "queued_tasks": 36,
     "redirected_tasks": 64,
-    "runtime_seconds": 0.07900000002700835,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Energy-Aware Congestion",
     "seed": 45,
     "task_workload": [
@@ -16331,7 +16331,7 @@
     "queue_load_stddev": 2.7729760484944577,
     "queued_tasks": 45,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.1410000000614673,
     "scheduler": "Baseline",
     "seed": 46,
     "task_workload": [
@@ -16879,7 +16879,7 @@
     "queue_load_stddev": 2.7729760484944577,
     "queued_tasks": 45,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.015999999945051968,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Congestion-Aware",
     "seed": 46,
     "task_workload": [
@@ -17427,7 +17427,7 @@
     "queue_load_stddev": 0.15275252316519466,
     "queued_tasks": 43,
     "redirected_tasks": 68,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.03200000000651926,
     "scheduler": "Energy-Aware Congestion",
     "seed": 46,
     "task_workload": [
@@ -17975,7 +17975,7 @@
     "queue_load_stddev": 3.030270148863588,
     "queued_tasks": 41,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03200000000651926,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Baseline",
     "seed": 47,
     "task_workload": [
@@ -18488,7 +18488,7 @@
     "queue_load_stddev": 3.030270148863588,
     "queued_tasks": 41,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.015000000013969839,
+    "runtime_seconds": 0.0,
     "scheduler": "Congestion-Aware",
     "seed": 47,
     "task_workload": [
@@ -19001,7 +19001,7 @@
     "queue_load_stddev": 0.48989794855663565,
     "queued_tasks": 36,
     "redirected_tasks": 61,
-    "runtime_seconds": 0.03200000000651926,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Energy-Aware Congestion",
     "seed": 47,
     "task_workload": [
@@ -20042,7 +20042,7 @@
     "queue_load_stddev": 3.8210453617209836,
     "queued_tasks": 48,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.07900000002700835,
+    "runtime_seconds": 0.06299999996554106,
     "scheduler": "Congestion-Aware",
     "seed": 48,
     "task_workload": [
@@ -20570,7 +20570,7 @@
     "queue_load_stddev": 0.4194191898318613,
     "queued_tasks": 39,
     "redirected_tasks": 65,
-    "runtime_seconds": 0.10900000005494803,
+    "runtime_seconds": 0.062000000034458935,
     "scheduler": "Energy-Aware Congestion",
     "seed": 48,
     "task_workload": [
@@ -21098,7 +21098,7 @@
     "queue_load_stddev": 1.7435924050729177,
     "queued_tasks": 27,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Baseline",
     "seed": 49,
     "task_workload": [
@@ -21541,7 +21541,7 @@
     "queue_load_stddev": 1.7435924050729177,
     "queued_tasks": 27,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.21899999992456287,
+    "runtime_seconds": 0.10999999998603016,
     "scheduler": "Congestion-Aware",
     "seed": 49,
     "task_workload": [
@@ -21984,7 +21984,7 @@
     "queue_load_stddev": 0.4000000000000001,
     "queued_tasks": 22,
     "redirected_tasks": 45,
-    "runtime_seconds": 0.09299999999348074,
+    "runtime_seconds": 0.03100000007543713,
     "scheduler": "Energy-Aware Congestion",
     "seed": 49,
     "task_workload": [
@@ -22427,7 +22427,7 @@
     "queue_load_stddev": 2.695284191082805,
     "queued_tasks": 35,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03200000000651926,
+    "runtime_seconds": 0.015999999945051968,
     "scheduler": "Baseline",
     "seed": 50,
     "task_workload": [
@@ -22930,7 +22930,7 @@
     "queue_load_stddev": 2.695284191082805,
     "queued_tasks": 35,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.1720000000204891,
+    "runtime_seconds": 0.0940000000409782,
     "scheduler": "Congestion-Aware",
     "seed": 50,
     "task_workload": [
@@ -23433,7 +23433,7 @@
     "queue_load_stddev": 0.48271850601740657,
     "queued_tasks": 34,
     "redirected_tasks": 55,
-    "runtime_seconds": 0.045999999972991645,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Energy-Aware Congestion",
     "seed": 50,
     "task_workload": [
@@ -23936,7 +23936,7 @@
     "queue_load_stddev": 3.246666962200335,
     "queued_tasks": 47,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0470000000204891,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Baseline",
     "seed": 51,
     "task_workload": [
@@ -24469,7 +24469,7 @@
     "queue_load_stddev": 3.246666962200335,
     "queued_tasks": 47,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.015000000013969839,
+    "runtime_seconds": 0.0940000000409782,
     "scheduler": "Congestion-Aware",
     "seed": 51,
     "task_workload": [
@@ -25002,7 +25002,7 @@
     "queue_load_stddev": 0.1632993161855452,
     "queued_tasks": 40,
     "redirected_tasks": 61,
-    "runtime_seconds": 0.0470000000204891,
+    "runtime_seconds": 0.06199999991804361,
     "scheduler": "Energy-Aware Congestion",
     "seed": 51,
     "task_workload": [
@@ -25535,7 +25535,7 @@
     "queue_load_stddev": 7.2954310985184145,
     "queued_tasks": 119,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Baseline",
     "seed": 42,
     "task_workload": [
@@ -26448,7 +26448,7 @@
     "queue_load_stddev": 7.2954310985184145,
     "queued_tasks": 119,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03200000000651926,
+    "runtime_seconds": 0.015999999945051968,
     "scheduler": "Congestion-Aware",
     "seed": 42,
     "task_workload": [
@@ -27361,7 +27361,7 @@
     "queue_load_stddev": 0.3160518393507399,
     "queued_tasks": 116,
     "redirected_tasks": 131,
-    "runtime_seconds": 0.23400000005494803,
+    "runtime_seconds": 0.14099999994505197,
     "scheduler": "Energy-Aware Congestion",
     "seed": 42,
     "task_workload": [
@@ -28274,7 +28274,7 @@
     "queue_load_stddev": 4.147832999608263,
     "queued_tasks": 101,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0470000000204891,
+    "runtime_seconds": 0.03100000007543713,
     "scheduler": "Baseline",
     "seed": 43,
     "task_workload": [
@@ -29112,7 +29112,7 @@
     "queue_load_stddev": 4.147832999608263,
     "queued_tasks": 101,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Congestion-Aware",
     "seed": 43,
     "task_workload": [
@@ -29950,7 +29950,7 @@
     "queue_load_stddev": 0.3666666666666667,
     "queued_tasks": 101,
     "redirected_tasks": 122,
-    "runtime_seconds": 0.06299999996554106,
+    "runtime_seconds": 0.0470000000204891,
     "scheduler": "Energy-Aware Congestion",
     "seed": 43,
     "task_workload": [
@@ -30788,7 +30788,7 @@
     "queue_load_stddev": 6.977828111344696,
     "queued_tasks": 111,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.015999999945051968,
+    "runtime_seconds": 0.15700000000651926,
     "scheduler": "Baseline",
     "seed": 44,
     "task_workload": [
@@ -31676,7 +31676,7 @@
     "queue_load_stddev": 6.977828111344696,
     "queued_tasks": 111,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03200000000651926,
+    "runtime_seconds": 0.0,
     "scheduler": "Congestion-Aware",
     "seed": 44,
     "task_workload": [
@@ -32564,7 +32564,7 @@
     "queue_load_stddev": 0.38608585649852795,
     "queued_tasks": 111,
     "redirected_tasks": 127,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.14099999994505197,
     "scheduler": "Energy-Aware Congestion",
     "seed": 44,
     "task_workload": [
@@ -33452,7 +33452,7 @@
     "queue_load_stddev": 6.030808547382723,
     "queued_tasks": 96,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.046999999904073775,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Baseline",
     "seed": 45,
     "task_workload": [
@@ -34260,7 +34260,7 @@
     "queue_load_stddev": 6.030808547382723,
     "queued_tasks": 96,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.015999999945051968,
     "scheduler": "Congestion-Aware",
     "seed": 45,
     "task_workload": [
@@ -35068,7 +35068,7 @@
     "queue_load_stddev": 0.5,
     "queued_tasks": 95,
     "redirected_tasks": 110,
-    "runtime_seconds": 0.125,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Energy-Aware Congestion",
     "seed": 45,
     "task_workload": [
@@ -35876,7 +35876,7 @@
     "queue_load_stddev": 4.666974285273683,
     "queued_tasks": 102,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.03200000000651926,
     "scheduler": "Baseline",
     "seed": 46,
     "task_workload": [
@@ -36719,7 +36719,7 @@
     "queue_load_stddev": 4.666974285273683,
     "queued_tasks": 102,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.030999999959021807,
+    "runtime_seconds": 0.03100000007543713,
     "scheduler": "Congestion-Aware",
     "seed": 46,
     "task_workload": [
@@ -37562,7 +37562,7 @@
     "queue_load_stddev": 0.2966326495188785,
     "queued_tasks": 102,
     "redirected_tasks": 125,
-    "runtime_seconds": 0.1410000000614673,
+    "runtime_seconds": 0.125,
     "scheduler": "Energy-Aware Congestion",
     "seed": 46,
     "task_workload": [
@@ -38405,7 +38405,7 @@
     "queue_load_stddev": 5.073685836441913,
     "queued_tasks": 110,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.030999999959021807,
+    "runtime_seconds": 0.0779999999795109,
     "scheduler": "Baseline",
     "seed": 47,
     "task_workload": [
@@ -39273,7 +39273,7 @@
     "queue_load_stddev": 5.073685836441913,
     "queued_tasks": 110,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.062000000034458935,
+    "runtime_seconds": 0.0779999999795109,
     "scheduler": "Congestion-Aware",
     "seed": 47,
     "task_workload": [
@@ -40141,7 +40141,7 @@
     "queue_load_stddev": 0.48271850601740657,
     "queued_tasks": 107,
     "redirected_tasks": 122,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.06299999996554106,
     "scheduler": "Energy-Aware Congestion",
     "seed": 47,
     "task_workload": [
@@ -41009,7 +41009,7 @@
     "queue_load_stddev": 7.264934457373879,
     "queued_tasks": 113,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.062000000034458935,
     "scheduler": "Baseline",
     "seed": 48,
     "task_workload": [
@@ -41892,7 +41892,7 @@
     "queue_load_stddev": 7.264934457373879,
     "queued_tasks": 113,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Congestion-Aware",
     "seed": 48,
     "task_workload": [
@@ -42775,7 +42775,7 @@
     "queue_load_stddev": 0.3333333333333333,
     "queued_tasks": 110,
     "redirected_tasks": 123,
-    "runtime_seconds": 0.10900000005494803,
+    "runtime_seconds": 0.125,
     "scheduler": "Energy-Aware Congestion",
     "seed": 48,
     "task_workload": [
@@ -43658,7 +43658,7 @@
     "queue_load_stddev": 4.1220131186068425,
     "queued_tasks": 90,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.03200000000651926,
     "scheduler": "Baseline",
     "seed": 49,
     "task_workload": [
@@ -44421,7 +44421,7 @@
     "queue_load_stddev": 4.1220131186068425,
     "queued_tasks": 90,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.030999999959021807,
+    "runtime_seconds": 0.01600000006146729,
     "scheduler": "Congestion-Aware",
     "seed": 49,
     "task_workload": [
@@ -45184,7 +45184,7 @@
     "queue_load_stddev": 0.39663264951887856,
     "queued_tasks": 86,
     "redirected_tasks": 106,
-    "runtime_seconds": 0.10999999998603016,
+    "runtime_seconds": 0.0779999999795109,
     "scheduler": "Energy-Aware Congestion",
     "seed": 49,
     "task_workload": [
@@ -46760,7 +46760,7 @@
     "queue_load_stddev": 5.748578985829359,
     "queued_tasks": 96,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.01600000006146729,
+    "runtime_seconds": 0.03100000007543713,
     "scheduler": "Congestion-Aware",
     "seed": 50,
     "task_workload": [
@@ -47573,7 +47573,7 @@
     "queue_load_stddev": 0.4493851726840732,
     "queued_tasks": 96,
     "redirected_tasks": 116,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.125,
     "scheduler": "Energy-Aware Congestion",
     "seed": 50,
     "task_workload": [
@@ -48386,7 +48386,7 @@
     "queue_load_stddev": 6.249670845757502,
     "queued_tasks": 112,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0779999999795109,
+    "runtime_seconds": 0.062000000034458935,
     "scheduler": "Baseline",
     "seed": 51,
     "task_workload": [
@@ -49274,7 +49274,7 @@
     "queue_load_stddev": 6.249670845757502,
     "queued_tasks": 112,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.03100000007543713,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Congestion-Aware",
     "seed": 51,
     "task_workload": [
@@ -50162,7 +50162,7 @@
     "queue_load_stddev": 0.19999999999999998,
     "queued_tasks": 111,
     "redirected_tasks": 125,
-    "runtime_seconds": 0.0470000000204891,
+    "runtime_seconds": 0.1720000000204891,
     "scheduler": "Energy-Aware Congestion",
     "seed": 51,
     "task_workload": [
@@ -52653,7 +52653,7 @@
     "queue_load_stddev": 9.103923350364568,
     "queued_tasks": 254,
     "redirected_tasks": 40,
-    "runtime_seconds": 0.09399999992456287,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Congestion-Aware",
     "seed": 42,
     "task_workload": [
@@ -54256,7 +54256,7 @@
     "queue_load_stddev": 0.47935115553628505,
     "queued_tasks": 254,
     "redirected_tasks": 250,
-    "runtime_seconds": 0.2029999999795109,
+    "runtime_seconds": 0.21899999992456287,
     "scheduler": "Energy-Aware Congestion",
     "seed": 42,
     "task_workload": [
@@ -55859,7 +55859,7 @@
     "queue_load_stddev": 7.383841282402134,
     "queued_tasks": 226,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.15600000007543713,
+    "runtime_seconds": 0.062000000034458935,
     "scheduler": "Baseline",
     "seed": 43,
     "task_workload": [
@@ -58785,7 +58785,7 @@
     "queue_load_stddev": 0.4299659828522118,
     "queued_tasks": 226,
     "redirected_tasks": 236,
-    "runtime_seconds": 0.2190000000409782,
+    "runtime_seconds": 0.2339999999385327,
     "scheduler": "Energy-Aware Congestion",
     "seed": 43,
     "task_workload": [
@@ -60248,7 +60248,7 @@
     "queue_load_stddev": 10.64598949620059,
     "queued_tasks": 226,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.1559999999590218,
+    "runtime_seconds": 0.06299999996554106,
     "scheduler": "Baseline",
     "seed": 44,
     "task_workload": [
@@ -61806,7 +61806,7 @@
     "queue_load_stddev": 8.575623338525537,
     "queued_tasks": 245,
     "redirected_tasks": 30,
-    "runtime_seconds": 0.1880000000819564,
+    "runtime_seconds": 0.23400000005494803,
     "scheduler": "Congestion-Aware",
     "seed": 44,
     "task_workload": [
@@ -63364,7 +63364,7 @@
     "queue_load_stddev": 0.3194191898318613,
     "queued_tasks": 245,
     "redirected_tasks": 247,
-    "runtime_seconds": 0.20300000009592623,
+    "runtime_seconds": 0.375,
     "scheduler": "Energy-Aware Congestion",
     "seed": 44,
     "task_workload": [
@@ -64922,7 +64922,7 @@
     "queue_load_stddev": 12.259377094341197,
     "queued_tasks": 212,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.09399999992456287,
+    "runtime_seconds": 0.06299999996554106,
     "scheduler": "Baseline",
     "seed": 45,
     "task_workload": [
@@ -66355,7 +66355,7 @@
     "queue_load_stddev": 10.128327038438547,
     "queued_tasks": 220,
     "redirected_tasks": 28,
-    "runtime_seconds": 0.125,
+    "runtime_seconds": 0.1559999999590218,
     "scheduler": "Congestion-Aware",
     "seed": 45,
     "task_workload": [
@@ -67788,7 +67788,7 @@
     "queue_load_stddev": 0.16666666666666666,
     "queued_tasks": 220,
     "redirected_tasks": 227,
-    "runtime_seconds": 0.23499999998603016,
+    "runtime_seconds": 0.062000000034458935,
     "scheduler": "Energy-Aware Congestion",
     "seed": 45,
     "task_workload": [
@@ -69221,7 +69221,7 @@
     "queue_load_stddev": 8.755706994652984,
     "queued_tasks": 218,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.1410000000614673,
+    "runtime_seconds": 0.2029999999795109,
     "scheduler": "Baseline",
     "seed": 46,
     "task_workload": [
@@ -70654,7 +70654,7 @@
     "queue_load_stddev": 7.650432279614196,
     "queued_tasks": 220,
     "redirected_tasks": 12,
-    "runtime_seconds": 0.0940000000409782,
+    "runtime_seconds": 0.015000000013969839,
     "scheduler": "Congestion-Aware",
     "seed": 46,
     "task_workload": [
@@ -72087,7 +72087,7 @@
     "queue_load_stddev": 0.2966326495188785,
     "queued_tasks": 220,
     "redirected_tasks": 233,
-    "runtime_seconds": 0.25,
+    "runtime_seconds": 0.26599999994505197,
     "scheduler": "Energy-Aware Congestion",
     "seed": 46,
     "task_workload": [
@@ -73520,7 +73520,7 @@
     "queue_load_stddev": 11.923966752802878,
     "queued_tasks": 236,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.030999999959021807,
+    "runtime_seconds": 0.062000000034458935,
     "scheduler": "Baseline",
     "seed": 47,
     "task_workload": [
@@ -75098,7 +75098,7 @@
     "queue_load_stddev": 9.056629053199787,
     "queued_tasks": 250,
     "redirected_tasks": 38,
-    "runtime_seconds": 0.0940000000409782,
+    "runtime_seconds": 0.125,
     "scheduler": "Congestion-Aware",
     "seed": 47,
     "task_workload": [
@@ -76676,7 +76676,7 @@
     "queue_load_stddev": 0.4299659828522118,
     "queued_tasks": 249,
     "redirected_tasks": 247,
-    "runtime_seconds": 0.31299999996554106,
+    "runtime_seconds": 0.14099999994505197,
     "scheduler": "Energy-Aware Congestion",
     "seed": 47,
     "task_workload": [
@@ -78254,7 +78254,7 @@
     "queue_load_stddev": 11.95511269421118,
     "queued_tasks": 230,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.0470000000204891,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Baseline",
     "seed": 48,
     "task_workload": [
@@ -79787,7 +79787,7 @@
     "queue_load_stddev": 10.003473471370208,
     "queued_tasks": 240,
     "redirected_tasks": 30,
-    "runtime_seconds": 0.14099999994505197,
+    "runtime_seconds": 0.1559999999590218,
     "scheduler": "Congestion-Aware",
     "seed": 48,
     "task_workload": [
@@ -81320,7 +81320,7 @@
     "queue_load_stddev": 0.16666666666666666,
     "queued_tasks": 240,
     "redirected_tasks": 234,
-    "runtime_seconds": 0.2970000000204891,
+    "runtime_seconds": 0.10900000005494803,
     "scheduler": "Energy-Aware Congestion",
     "seed": 48,
     "task_workload": [
@@ -82853,7 +82853,7 @@
     "queue_load_stddev": 7.949622989491302,
     "queued_tasks": 230,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.1559999999590218,
+    "runtime_seconds": 0.0779999999795109,
     "scheduler": "Baseline",
     "seed": 49,
     "task_workload": [
@@ -84331,7 +84331,7 @@
     "queue_load_stddev": 7.3816593969382245,
     "queued_tasks": 230,
     "redirected_tasks": 5,
-    "runtime_seconds": 0.07800000009592623,
+    "runtime_seconds": 0.03100000007543713,
     "scheduler": "Congestion-Aware",
     "seed": 49,
     "task_workload": [
@@ -85809,7 +85809,7 @@
     "queue_load_stddev": 0.3527525231651947,
     "queued_tasks": 229,
     "redirected_tasks": 239,
-    "runtime_seconds": 0.26599999994505197,
+    "runtime_seconds": 0.09299999999348074,
     "scheduler": "Energy-Aware Congestion",
     "seed": 49,
     "task_workload": [
@@ -87287,7 +87287,7 @@
     "queue_load_stddev": 8.871533614811636,
     "queued_tasks": 230,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.14000000001396984,
+    "runtime_seconds": 0.0470000000204891,
     "scheduler": "Baseline",
     "seed": 50,
     "task_workload": [
@@ -88785,7 +88785,7 @@
     "queue_load_stddev": 7.229062170395433,
     "queued_tasks": 233,
     "redirected_tasks": 19,
-    "runtime_seconds": 0.030999999959021807,
+    "runtime_seconds": 0.06299999996554106,
     "scheduler": "Congestion-Aware",
     "seed": 50,
     "task_workload": [
@@ -90283,7 +90283,7 @@
     "queue_load_stddev": 0.4194191898318613,
     "queued_tasks": 233,
     "redirected_tasks": 231,
-    "runtime_seconds": 0.1559999999590218,
+    "runtime_seconds": 0.07900000002700835,
     "scheduler": "Energy-Aware Congestion",
     "seed": 50,
     "task_workload": [
@@ -91781,7 +91781,7 @@
     "queue_load_stddev": 9.34837199776015,
     "queued_tasks": 236,
     "redirected_tasks": 0,
-    "runtime_seconds": 0.15700000000651926,
+    "runtime_seconds": 0.030999999959021807,
     "scheduler": "Baseline",
     "seed": 51,
     "task_workload": [
@@ -93294,7 +93294,7 @@
     "queue_load_stddev": 8.457540946213568,
     "queued_tasks": 236,
     "redirected_tasks": 10,
-    "runtime_seconds": 0.062000000034458935,
+    "runtime_seconds": 0.06299999996554106,
     "scheduler": "Congestion-Aware",
     "seed": 51,
     "task_workload": [
@@ -94807,7 +94807,7 @@
     "queue_load_stddev": 0.4265986323710904,
     "queued_tasks": 236,
     "redirected_tasks": 238,
-    "runtime_seconds": 0.2190000000409782,
+    "runtime_seconds": 0.18700000003445894,
     "scheduler": "Energy-Aware Congestion",
     "seed": 51,
     "task_workload": [
