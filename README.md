@@ -14,6 +14,8 @@ Computing"**.
 - Nearest-edge baseline assignment, real FIFO edge queues, and processing.
 - Interchangeable baseline and congestion-aware task-placement schedulers.
 - Configurable simulation energy accounting and energy-aware congestion placement.
+- Eight additional schedulers: Lyapunov, IDO/DNSLA, DARC-DE, PSO, GA, PSG,
+  Gale-Shapley, and tabular multi-layer RL.
 - Before/after queue observations, utilization measurements, load classes, and
   persisted per-round metrics for later congestion analysis.
 - Basic validation and unit tests.
@@ -59,7 +61,8 @@ python main.py --energy
 - `models/task.py` defines the task lifecycle.
 - `network/network.py` creates nodes and constructs the topology.
 - `services/congestion.py` classifies queue utilization and aggregates congestion.
-- `services/scheduling.py` contains the nearest-edge baseline and congestion-aware placement policies.
+- `services/scheduling.py` contains the original placement policies;
+  `services/advanced_scheduling.py` contains the eight guide-driven additions.
 - `models/edge_node.py` tracks remaining and consumed simulation energy.
 - `simulation/simulator.py` executes generation, assignment, queueing,
   processing, queue snapshots, and metrics history.
@@ -151,17 +154,26 @@ scores are preferred. Nodes below `1.0` remaining energy unit are ineligible
 for new energy-aware assignments. This is a transparent simulation model, not
 a claim of physical battery accuracy.
 
-## Not yet implemented
+## Advanced scheduling policies
 
-Task migration after assignment, dynamic load balancing, advanced energy
-optimization, machine learning, cloud deployment, and a user
-interface are future stages. Queue capacity is enforced: an assigned task is
-explicitly marked `DROPPED` when its selected edge queue is full.
+The added policies are available from `services` and are included in the
+experiment and scalability matrices. Batch optimizers receive the current
+round's task set before tasks enter queues. PSG uses deterministic task
+priority and deadline fields; generated tasks receive repeatable values.
+The simulator records round delay and deadline-lateness metrics from task
+creation and completion rounds.
+
+IDO/DNSLA, DARC-DE, and ML-RL are explicitly labeled integration heuristics or
+approximations. The guide does not identify the papers or provide their exact
+update equations, so these implementations do not claim paper-faithful
+reproduction. The current delay model is queue waiting in simulation rounds;
+wireless transmission delay, packet loss, and radio energy remain outside the
+model.
 
 ## Experimental evaluation and scalability
 
-The evaluation runner compares the unchanged `Baseline`, `Congestion-Aware`,
-and `Energy-Aware Congestion` schedulers. Every scheduler/seed pair gets a
+The evaluation runner compares the three original schedulers and all eight
+new schedulers. Every scheduler/seed pair gets a
 fresh simulator with the same seeded topology, IoT-device positions, task
 generation streams, queue/processing capacities, energy settings, and number
 of rounds. The runner verifies the topology, device, and generated-task
@@ -214,8 +226,8 @@ Queues therefore provide the observable overload point:
 IoT Devices -> Edge Network -> Edge Nodes -> Task Queues -> Scheduling -> Processing
 ```
 
-The three schedulers are deliberately simple baselines for comparison. The
-project does not claim that any one strategy is universally optimal.
+The original three schedulers remain baselines for comparison. The project
+does not claim that any one strategy is universally optimal.
 
 ### Energy assumptions
 

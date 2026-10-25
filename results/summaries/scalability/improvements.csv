@@ -4,46 +4,238 @@ baseline_mean,change_percent,direction,interpretation,metric,proposed_mean,sched
 0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Congestion-Aware
 0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Congestion-Aware
 2.0849466709760827,0.0,lower-is-better,unchanged,energy_per_completed_task,2.0849466709760827,Congestion-Aware
-34.160000000000004,0.0,lower-is-better,unchanged,total_energy_consumed,34.160000000000004,Congestion-Aware
+34.16,0.0,lower-is-better,unchanged,total_energy_consumed,34.16,Congestion-Aware
 0.5899242263149019,-37.39440696662092,higher-is-better,regression,completion_ratio,0.3693255603320177,Congestion-Aware
 0,N/A,lower-is-better,not available,total_dropped,0,Congestion-Aware
 0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Congestion-Aware
 0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Congestion-Aware
 2.0849466709760827,2.993937560207204,lower-is-better,improvement,energy_per_completed_task,2.02252466948344,Congestion-Aware
-34.160000000000004,-46.16510538641684,lower-is-better,regression,total_energy_consumed,49.93,Congestion-Aware
+34.16,-46.165105386416876,lower-is-better,regression,total_energy_consumed,49.93,Congestion-Aware
 0.5899242263149019,-63.65936348518127,higher-is-better,regression,completion_ratio,0.2143822187979552,Congestion-Aware
 0,N/A,lower-is-better,not available,total_dropped,0,Congestion-Aware
 0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Congestion-Aware
 0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Congestion-Aware
 2.0849466709760827,3.807542036301062,lower-is-better,improvement,energy_per_completed_task,2.0055614500442087,Congestion-Aware
-34.160000000000004,-67.30093676814987,lower-is-better,regression,total_energy_consumed,57.15,Congestion-Aware
+34.16,-67.3009367681499,lower-is-better,regression,total_energy_consumed,57.15,Congestion-Aware
 0.5899242263149019,-80.91643921284401,higher-is-better,regression,completion_ratio,0.11257854832696394,Congestion-Aware
 0,N/A,lower-is-better,not available,total_dropped,0,Congestion-Aware
 0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.08,Congestion-Aware
 0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.19,Congestion-Aware
 2.0849466709760827,4.041207239330661,lower-is-better,improvement,energy_per_completed_task,2.0006896551724136,Congestion-Aware
-34.160000000000004,-74.53161592505853,lower-is-better,regression,total_energy_consumed,59.62,Congestion-Aware
+34.16,-74.53161592505856,lower-is-better,regression,total_energy_consumed,59.62,Congestion-Aware
+0.5899242263149019,62.084485132848,higher-is-better,improvement,completion_ratio,0.9561756448964458,DARC-DE (discrete heuristic)
+0,N/A,lower-is-better,not available,total_dropped,0,DARC-DE (discrete heuristic)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,DARC-DE (discrete heuristic)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,DARC-DE (discrete heuristic)
+2.0849466709760827,3.444744746173773,lower-is-better,improvement,energy_per_completed_task,2.013125580067109,DARC-DE (discrete heuristic)
+34.16,-57.84543325526934,lower-is-better,regression,total_energy_consumed,53.92,DARC-DE (discrete heuristic)
+0.5899242263149019,-24.131632441296166,higher-is-better,regression,completion_ratio,0.44756588033842964,DARC-DE (discrete heuristic)
+0,N/A,lower-is-better,not available,total_dropped,0,DARC-DE (discrete heuristic)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,DARC-DE (discrete heuristic)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,DARC-DE (discrete heuristic)
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,DARC-DE (discrete heuristic)
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,DARC-DE (discrete heuristic)
+0.5899242263149019,-61.736247278139444,higher-is-better,regression,completion_ratio,0.22572714720348308,DARC-DE (discrete heuristic)
+0,N/A,lower-is-better,not available,total_dropped,0,DARC-DE (discrete heuristic)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,DARC-DE (discrete heuristic)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,DARC-DE (discrete heuristic)
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,DARC-DE (discrete heuristic)
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,DARC-DE (discrete heuristic)
+0.5899242263149019,-80.79023261003687,higher-is-better,regression,completion_ratio,0.11332307165213243,DARC-DE (discrete heuristic)
+0,N/A,lower-is-better,not available,total_dropped,0,DARC-DE (discrete heuristic)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,DARC-DE (discrete heuristic)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,DARC-DE (discrete heuristic)
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,DARC-DE (discrete heuristic)
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,DARC-DE (discrete heuristic)
 0.5899242263149019,64.26519884662773,higher-is-better,improvement,completion_ratio,0.9690402034006038,Energy-Aware Congestion
 0,N/A,lower-is-better,not available,total_dropped,0,Energy-Aware Congestion
 0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Energy-Aware Congestion
 0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Energy-Aware Congestion
 2.0849466709760827,3.513394375220434,lower-is-better,improvement,energy_per_completed_task,2.0116942719116633,Energy-Aware Congestion
-34.160000000000004,-60.07025761124122,lower-is-better,regression,total_energy_consumed,54.68000000000001,Energy-Aware Congestion
+34.16,-60.07025761124123,lower-is-better,regression,total_energy_consumed,54.68,Energy-Aware Congestion
 0.5899242263149019,-24.131632441296166,higher-is-better,regression,completion_ratio,0.44756588033842964,Energy-Aware Congestion
 0,N/A,lower-is-better,not available,total_dropped,0,Energy-Aware Congestion
 0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Energy-Aware Congestion
 0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Energy-Aware Congestion
 2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Energy-Aware Congestion
-34.160000000000004,-75.64402810304448,lower-is-better,regression,total_energy_consumed,60.0,Energy-Aware Congestion
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,Energy-Aware Congestion
 0.5899242263149019,-61.736247278139444,higher-is-better,regression,completion_ratio,0.22572714720348308,Energy-Aware Congestion
 0,N/A,lower-is-better,not available,total_dropped,0,Energy-Aware Congestion
 0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Energy-Aware Congestion
 0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Energy-Aware Congestion
 2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Energy-Aware Congestion
-34.160000000000004,-75.64402810304448,lower-is-better,regression,total_energy_consumed,60.0,Energy-Aware Congestion
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,Energy-Aware Congestion
 0.5899242263149019,-80.79023261003687,higher-is-better,regression,completion_ratio,0.11332307165213243,Energy-Aware Congestion
 0,N/A,lower-is-better,not available,total_dropped,0,Energy-Aware Congestion
 0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Energy-Aware Congestion
 0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Energy-Aware Congestion
 2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Energy-Aware Congestion
-34.160000000000004,-75.64402810304448,lower-is-better,regression,total_energy_consumed,60.0,Energy-Aware Congestion
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,Energy-Aware Congestion
+0.5899242263149019,64.26519884662773,higher-is-better,improvement,completion_ratio,0.9690402034006038,GA
+0,N/A,lower-is-better,not available,total_dropped,0,GA
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,GA
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,GA
+2.0849466709760827,3.513394375220434,lower-is-better,improvement,energy_per_completed_task,2.0116942719116633,GA
+34.16,-60.07025761124123,lower-is-better,regression,total_energy_consumed,54.68,GA
+0.5899242263149019,-24.131632441296166,higher-is-better,regression,completion_ratio,0.44756588033842964,GA
+0,N/A,lower-is-better,not available,total_dropped,0,GA
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,GA
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,GA
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,GA
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,GA
+0.5899242263149019,-61.736247278139444,higher-is-better,regression,completion_ratio,0.22572714720348308,GA
+0,N/A,lower-is-better,not available,total_dropped,0,GA
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,GA
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,GA
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,GA
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,GA
+0.5899242263149019,-80.79023261003687,higher-is-better,regression,completion_ratio,0.11332307165213243,GA
+0,N/A,lower-is-better,not available,total_dropped,0,GA
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,GA
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,GA
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,GA
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,GA
+0.5899242263149019,4.936751542679558,higher-is-better,improvement,completion_ratio,0.6190473196581433,Gale-Shapley
+0,N/A,lower-is-better,not available,total_dropped,0,Gale-Shapley
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Gale-Shapley
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Gale-Shapley
+2.0849466709760827,0.42375512828802236,lower-is-better,improvement,energy_per_completed_task,2.076111602535751,Gale-Shapley
+34.16,-5.0058548009367705,lower-is-better,regression,total_energy_consumed,35.87,Gale-Shapley
+0.5899242263149019,-38.42855618326537,higher-is-better,regression,completion_ratio,0.3632248635667863,Gale-Shapley
+0,N/A,lower-is-better,not available,total_dropped,0,Gale-Shapley
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Gale-Shapley
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Gale-Shapley
+2.0849466709760827,2.9194993104321116,lower-is-better,improvement,energy_per_completed_task,2.0240766672940587,Gale-Shapley
+34.16,-44.49648711943795,lower-is-better,regression,total_energy_consumed,49.36,Gale-Shapley
+0.5899242263149019,-63.94067038559172,higher-is-better,regression,completion_ratio,0.21272272124213834,Gale-Shapley
+0,N/A,lower-is-better,not available,total_dropped,0,Gale-Shapley
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.030000000000000002,Gale-Shapley
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.060000000000000005,Gale-Shapley
+2.0849466709760827,3.760950353954684,lower-is-better,improvement,energy_per_completed_task,2.0065328617742413,Gale-Shapley
+34.16,-66.18852459016395,lower-is-better,regression,total_energy_consumed,56.769999999999996,Gale-Shapley
+0.5899242263149019,-80.85099006380462,higher-is-better,regression,completion_ratio,0.11296464871306433,Gale-Shapley
+0,N/A,lower-is-better,not available,total_dropped,0,Gale-Shapley
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.14,Gale-Shapley
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.28,Gale-Shapley
+2.0849466709760827,4.057746155697541,lower-is-better,improvement,energy_per_completed_task,2.000344827586207,Gale-Shapley
+34.16,-75.08782201405154,lower-is-better,regression,total_energy_consumed,59.81,Gale-Shapley
+0.5899242263149019,62.669013739786116,higher-is-better,improvement,completion_ratio,0.9596239207585148,IDO/DNSLA (heuristic)
+0,N/A,lower-is-better,not available,total_dropped,0,IDO/DNSLA (heuristic)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,IDO/DNSLA (heuristic)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,IDO/DNSLA (heuristic)
+2.0849466709760827,3.463777626119792,lower-is-better,improvement,energy_per_completed_task,2.0127287546702837,IDO/DNSLA (heuristic)
+34.16,-58.401639344262314,lower-is-better,regression,total_energy_consumed,54.11,IDO/DNSLA (heuristic)
+0.5899242263149019,-24.131632441296166,higher-is-better,regression,completion_ratio,0.44756588033842964,IDO/DNSLA (heuristic)
+0,N/A,lower-is-better,not available,total_dropped,0,IDO/DNSLA (heuristic)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,IDO/DNSLA (heuristic)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,IDO/DNSLA (heuristic)
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,IDO/DNSLA (heuristic)
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,IDO/DNSLA (heuristic)
+0.5899242263149019,-61.736247278139444,higher-is-better,regression,completion_ratio,0.22572714720348308,IDO/DNSLA (heuristic)
+0,N/A,lower-is-better,not available,total_dropped,0,IDO/DNSLA (heuristic)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,IDO/DNSLA (heuristic)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,IDO/DNSLA (heuristic)
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,IDO/DNSLA (heuristic)
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,IDO/DNSLA (heuristic)
+0.5899242263149019,-80.79023261003687,higher-is-better,regression,completion_ratio,0.11332307165213243,IDO/DNSLA (heuristic)
+0,N/A,lower-is-better,not available,total_dropped,0,IDO/DNSLA (heuristic)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,IDO/DNSLA (heuristic)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,IDO/DNSLA (heuristic)
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,IDO/DNSLA (heuristic)
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,IDO/DNSLA (heuristic)
+0.5899242263149019,64.26519884662773,higher-is-better,improvement,completion_ratio,0.9690402034006038,Lyapunov
+0,N/A,lower-is-better,not available,total_dropped,0,Lyapunov
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Lyapunov
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Lyapunov
+2.0849466709760827,3.513394375220434,lower-is-better,improvement,energy_per_completed_task,2.0116942719116633,Lyapunov
+34.16,-60.07025761124123,lower-is-better,regression,total_energy_consumed,54.68,Lyapunov
+0.5899242263149019,-24.131632441296166,higher-is-better,regression,completion_ratio,0.44756588033842964,Lyapunov
+0,N/A,lower-is-better,not available,total_dropped,0,Lyapunov
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Lyapunov
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Lyapunov
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Lyapunov
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,Lyapunov
+0.5899242263149019,-61.736247278139444,higher-is-better,regression,completion_ratio,0.22572714720348308,Lyapunov
+0,N/A,lower-is-better,not available,total_dropped,0,Lyapunov
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Lyapunov
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Lyapunov
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Lyapunov
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,Lyapunov
+0.5899242263149019,-80.79023261003687,higher-is-better,regression,completion_ratio,0.11332307165213243,Lyapunov
+0,N/A,lower-is-better,not available,total_dropped,0,Lyapunov
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Lyapunov
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Lyapunov
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Lyapunov
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,Lyapunov
+0.5899242263149019,-46.22444628442708,higher-is-better,regression,completion_ratio,0.31723501920314806,ML-RL (tabular approximation)
+0,N/A,lower-is-better,not available,total_dropped,0,ML-RL (tabular approximation)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,ML-RL (tabular approximation)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,ML-RL (tabular approximation)
+2.0849466709760827,-8.105892962481082,lower-is-better,regression,energy_per_completed_task,2.2539502164502165,ML-RL (tabular approximation)
+34.16,42.27166276346604,lower-is-better,improvement,total_energy_consumed,19.72,ML-RL (tabular approximation)
+0.5899242263149019,-72.08821550093467,higher-is-better,regression,completion_ratio,0.16465837875679387,ML-RL (tabular approximation)
+0,N/A,lower-is-better,not available,total_dropped,0,ML-RL (tabular approximation)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,ML-RL (tabular approximation)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,ML-RL (tabular approximation)
+2.0849466709760827,-4.833262459147534,lower-is-better,regression,energy_per_completed_task,2.185717615717616,ML-RL (tabular approximation)
+34.16,30.0351288056206,lower-is-better,improvement,total_energy_consumed,23.9,ML-RL (tabular approximation)
+0.5899242263149019,-81.08247792633121,higher-is-better,regression,completion_ratio,0.11159904573104137,ML-RL (tabular approximation)
+0,N/A,lower-is-better,not available,total_dropped,0,ML-RL (tabular approximation)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.11,ML-RL (tabular approximation)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.16,ML-RL (tabular approximation)
+2.0849466709760827,-1.0445457469675343,lower-is-better,regression,energy_per_completed_task,2.1067248927543045,ML-RL (tabular approximation)
+34.16,8.899297423887587,lower-is-better,improvement,total_energy_consumed,31.119999999999997,ML-RL (tabular approximation)
+0.5899242263149019,-85.08373138771701,higher-is-better,regression,completion_ratio,0.08799468220606302,ML-RL (tabular approximation)
+0,N/A,lower-is-better,not available,total_dropped,0,ML-RL (tabular approximation)
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.23666666666666666,ML-RL (tabular approximation)
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.35,ML-RL (tabular approximation)
+2.0849466709760827,2.675020839093883,lower-is-better,improvement,energy_per_completed_task,2.0291739130434783,ML-RL (tabular approximation)
+34.16,-38.378220140515225,lower-is-better,regression,total_energy_consumed,47.269999999999996,ML-RL (tabular approximation)
+0.5899242263149019,62.669013739786116,higher-is-better,improvement,completion_ratio,0.9596239207585148,PSO
+0,N/A,lower-is-better,not available,total_dropped,0,PSO
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,PSO
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,PSO
+2.0849466709760827,3.463777626119792,lower-is-better,improvement,energy_per_completed_task,2.0127287546702837,PSO
+34.16,-58.401639344262314,lower-is-better,regression,total_energy_consumed,54.11,PSO
+0.5899242263149019,-24.131632441296166,higher-is-better,regression,completion_ratio,0.44756588033842964,PSO
+0,N/A,lower-is-better,not available,total_dropped,0,PSO
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,PSO
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,PSO
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,PSO
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,PSO
+0.5899242263149019,-61.736247278139444,higher-is-better,regression,completion_ratio,0.22572714720348308,PSO
+0,N/A,lower-is-better,not available,total_dropped,0,PSO
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,PSO
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,PSO
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,PSO
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,PSO
+0.5899242263149019,-80.79023261003687,higher-is-better,regression,completion_ratio,0.11332307165213243,PSO
+0,N/A,lower-is-better,not available,total_dropped,0,PSO
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,PSO
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,PSO
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,PSO
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,PSO
+0.5899242263149019,59.19551310086122,higher-is-better,improvement,completion_ratio,0.9391328989882939,Priority-aware Semi-Greedy
+0,N/A,lower-is-better,not available,total_dropped,0,Priority-aware Semi-Greedy
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Priority-aware Semi-Greedy
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Priority-aware Semi-Greedy
+2.0849466709760827,3.347964823477425,lower-is-better,improvement,energy_per_completed_task,2.01514338984354,Priority-aware Semi-Greedy
+34.16,-55.06440281030446,lower-is-better,regression,total_energy_consumed,52.97,Priority-aware Semi-Greedy
+0.5899242263149019,-24.131632441296166,higher-is-better,regression,completion_ratio,0.44756588033842964,Priority-aware Semi-Greedy
+0,N/A,lower-is-better,not available,total_dropped,0,Priority-aware Semi-Greedy
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Priority-aware Semi-Greedy
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Priority-aware Semi-Greedy
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Priority-aware Semi-Greedy
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,Priority-aware Semi-Greedy
+0.5899242263149019,-61.736247278139444,higher-is-better,regression,completion_ratio,0.22572714720348308,Priority-aware Semi-Greedy
+0,N/A,lower-is-better,not available,total_dropped,0,Priority-aware Semi-Greedy
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Priority-aware Semi-Greedy
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Priority-aware Semi-Greedy
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Priority-aware Semi-Greedy
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,Priority-aware Semi-Greedy
+0.5899242263149019,-80.79023261003687,higher-is-better,regression,completion_ratio,0.11332307165213243,Priority-aware Semi-Greedy
+0,N/A,lower-is-better,not available,total_dropped,0,Priority-aware Semi-Greedy
+0.0,N/A,lower-is-better,not available,average_congestion_ratio,0.0,Priority-aware Semi-Greedy
+0.0,N/A,lower-is-better,not available,peak_congestion_ratio,0.0,Priority-aware Semi-Greedy
+2.0849466709760827,4.074285072064423,lower-is-better,improvement,energy_per_completed_task,2.0,Priority-aware Semi-Greedy
+34.16,-75.64402810304452,lower-is-better,regression,total_energy_consumed,60.0,Priority-aware Semi-Greedy

@@ -12,7 +12,15 @@ from config import NetworkConfig
 from services import (
     BaselineScheduler,
     CongestionAwareScheduler,
+    DARC_DEScheduler,
     EnergyAwareCongestionScheduler,
+    GAScheduler,
+    GaleShapleyScheduler,
+    IDOScheduler,
+    LyapunovScheduler,
+    MLRLScheduler,
+    PSGScheduler,
+    PSOScheduler,
 )
 from simulation import Simulator
 
@@ -21,6 +29,14 @@ SCHEDULER_SPECS = (
     ("Baseline", BaselineScheduler),
     ("Congestion-Aware", CongestionAwareScheduler),
     ("Energy-Aware Congestion", EnergyAwareCongestionScheduler),
+    ("Lyapunov", LyapunovScheduler),
+    ("IDO/DNSLA (heuristic)", IDOScheduler),
+    ("DARC-DE (discrete heuristic)", DARC_DEScheduler),
+    ("PSO", PSOScheduler),
+    ("GA", GAScheduler),
+    ("Priority-aware Semi-Greedy", PSGScheduler),
+    ("Gale-Shapley", GaleShapleyScheduler),
+    ("ML-RL (tabular approximation)", MLRLScheduler),
 )
 
 
@@ -178,6 +194,9 @@ class ExperimentRunner:
         energy_per_task = (
             final.total_energy_consumed / completed if completed else None
         )
+        completed_tasks = [task for task in simulator.all_tasks if task.status.name == "COMPLETED"]
+        task_delays = [task.delay_rounds for task in completed_tasks if task.delay_rounds is not None]
+        lateness = [task.deadline_lateness for task in completed_tasks if task.deadline_lateness is not None]
         return {
             "scheduler": scheduler_name,
             "workload_mode": workload_mode,
@@ -206,6 +225,11 @@ class ExperimentRunner:
             "congested_node_rounds": simulator.total_congested_node_rounds,
             "total_energy_consumed": final.total_energy_consumed,
             "energy_per_completed_task": energy_per_task,
+            "average_delay": sum(task_delays) / len(task_delays) if task_delays else 0.0,
+            "maximum_delay": max(task_delays, default=0),
+            "deadline_violations": sum(value > 0 for value in lateness),
+            "average_deadline_lateness": sum(lateness) / len(lateness) if lateness else 0.0,
+            "maximum_deadline_lateness": max(lateness, default=0),
             "average_remaining_energy": final.average_node_energy,
             "minimum_remaining_energy": final.minimum_node_energy,
             "maximum_remaining_energy": final.maximum_node_energy,

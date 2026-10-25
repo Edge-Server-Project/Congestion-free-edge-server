@@ -31,6 +31,11 @@ AGGREGATE_METRICS = (
     "congested_node_rounds",
     "total_energy_consumed",
     "energy_per_completed_task",
+    "average_delay",
+    "maximum_delay",
+    "deadline_violations",
+    "average_deadline_lateness",
+    "maximum_deadline_lateness",
     "average_remaining_energy",
     "minimum_remaining_energy",
     "maximum_remaining_energy",
@@ -411,7 +416,11 @@ class ResultProcessor:
 
 
 def _scheduler_order(rows: Iterable[dict]) -> list[str]:
-    preferred = ["Baseline", "Congestion-Aware", "Energy-Aware Congestion"]
+    preferred = [
+        "Baseline", "Congestion-Aware", "Energy-Aware Congestion", "Lyapunov",
+        "IDO/DNSLA (heuristic)", "DARC-DE (discrete heuristic)", "PSO", "GA",
+        "Priority-aware Semi-Greedy", "Gale-Shapley", "ML-RL (tabular approximation)",
+    ]
     names = {row["scheduler"] for row in rows}
     return [name for name in preferred if name in names]
 
