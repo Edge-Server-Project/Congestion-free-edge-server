@@ -162,7 +162,9 @@ class EdgeNode:
         self.received_tasks += 1
         return True
 
-    def process_queued_tasks(self, processing_energy_per_task: float = 0.0) -> tuple[Task, ...]:
+    def process_queued_tasks(
+        self, processing_energy_per_task: float = 0.0, current_round: int | None = None
+    ) -> tuple[Task, ...]:
         """Process affordable tasks up to capacity and charge each completed task."""
         if not self.is_active:
             return ()
@@ -179,6 +181,7 @@ class EdgeNode:
                 self.current_processing_count = 0
                 break
             task.mark_completed()
+            task.completion_round = current_round
             processed.append(task)
         self.current_processing_count = 0
         self.processed_tasks += len(processed)

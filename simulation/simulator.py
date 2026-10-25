@@ -13,7 +13,13 @@ from services import (
     BaselineScheduler,
     CongestionAnalyzer,
     CongestionReport,
+    DARC_DEScheduler,
     EnergyAwareCongestionScheduler,
+    GAScheduler,
+    IDOScheduler,
+    MLRLScheduler,
+    PSGScheduler,
+    PSOScheduler,
     SchedulingDecision,
 )
 
@@ -61,6 +67,11 @@ class RoundMetrics:
     maximum_node_energy: float
     energy_consumed_this_round: float
     energy_consumed_per_completed_task: float | None
+    average_delay: float
+    maximum_delay: int
+    deadline_violations: int
+    average_deadline_lateness: float
+    maximum_deadline_lateness: int
 
 
 @dataclass(frozen=True, slots=True)
@@ -243,7 +254,7 @@ class Simulator:
         queue_sizes_before = self._queue_sizes()
         congestion_before = self.congestion_analyzer.analyze(self.network.nodes)
         self._assert_queue_consistency(queued_tasks)
-        processing_counts, processed_tasks_by_node, processed_tasks = self._process_queued_tasks()
+        processing_counts, processed_tasks_by_node, processed_tasks = self._process_queued_tasks(round_number)
         queue_sizes_after = self._queue_sizes()
         congestion_after = self.congestion_analyzer.analyze(self.network.nodes)
 
@@ -258,7 +269,16 @@ class Simulator:
             queue_sizes_after=queue_sizes_after,
             congestion_before=congestion_before,
             congestion_after=congestion_after,
+            processed_tasks=processed_tasks,
         )
+        if hasattr(selected_scheduler, "observe_reward"):
+            reward = (
+                len(processed_tasks)
+                - 2.0 * len(dropped_tasks)
+                - congestion_before.average_queue_utilization
+                - 0.1 * metrics.energy_consumed_this_round
+            )
+            selected_scheduler.observe_reward(reward, self.network.nodes)
         self._history.append(metrics)
         self.validate_task_accounting()
         self.validate_energy_accounting()
@@ -314,6 +334,12 @@ class Simulator:
         """Place tasks through the selected scheduler and retain decision records."""
         queued_tasks: list[Task] = []
         decisions: list[SchedulingDecision] = []
+        if hasattr(scheduler, "assign_batch"):
+            decisions.extend(scheduler.assign_batch(tasks, self._devices, self.network))
+            return (
+                tuple(task for task in tasks if task.status is TaskStatus.QUEUED),
+                tuple(decisions),
+            )
         for task in tasks:
             source = self._devices[task.source_device_id]
             decision = scheduler.assign_task(task, source, self.network)
@@ -327,6 +353,10 @@ class Simulator:
         if scheduler is None:
             return BaselineScheduler()
         if isinstance(scheduler, type):
+            if scheduler in (IDOScheduler, DARC_DEScheduler, PSOScheduler, GAScheduler):
+                return scheduler(seed=self.config.seed)
+            if scheduler in (PSGScheduler, MLRLScheduler):
+                return scheduler(seed=self.config.seed)
             if issubclass(scheduler, EnergyAwareCongestionScheduler):
                 return scheduler(
                     congestion_threshold=self.config.congestion_threshold,
@@ -342,14 +372,17 @@ class Simulator:
         return scheduler
 
     def _process_queued_tasks(
-        self,
+        self, round_number: int,
     ) -> tuple[dict[str, int], dict[str, tuple[Task, ...]], tuple[Task, ...]]:
         """Process each edge node's FIFO queue after current-round assignment."""
         processing_counts: dict[str, int] = {}
         processed_by_node: dict[str, tuple[Task, ...]] = {}
         processed_tasks: list[Task] = []
         for edge_node in self.network.nodes:
-            processed = edge_node.process_queued_tasks(self.config.processing_energy_per_task)
+            processed = edge_node.process_queued_tasks(
+                self.config.processing_energy_per_task,
+                current_round=round_number,
+            )
             processing_counts[edge_node.node_id] = len(processed)
             processed_by_node[edge_node.node_id] = processed
             processed_tasks.extend(processed)
@@ -386,6 +419,7 @@ class Simulator:
         queue_sizes_after: dict[str, int],
         congestion_before: CongestionReport,
         congestion_after: CongestionReport,
+        processed_tasks: tuple[Task, ...],
     ) -> RoundMetrics:
         """Build the persisted end-of-round metrics from actual queues."""
         queue_sizes = tuple(queue_sizes_after.values())
@@ -441,5 +475,21 @@ class Simulator:
                 energy_consumed_this_round / processed_this_round
                 if processed_this_round
                 else None
+            ),
+            average_delay=(
+                sum(task.delay_rounds or 0 for task in processed_tasks) / len(processed_tasks)
+                if processed_tasks else 0.0
+            ),
+            maximum_delay=max((task.delay_rounds or 0 for task in processed_tasks), default=0),
+            deadline_violations=sum(
+                task.deadline_lateness is not None and task.deadline_lateness > 0
+                for task in processed_tasks
+            ),
+            average_deadline_lateness=(
+                sum(task.deadline_lateness or 0 for task in processed_tasks) / len(processed_tasks)
+                if processed_tasks else 0.0
+            ),
+            maximum_deadline_lateness=max(
+                (task.deadline_lateness or 0 for task in processed_tasks), default=0
             ),
         )

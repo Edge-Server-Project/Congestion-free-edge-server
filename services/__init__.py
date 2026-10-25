@@ -8,9 +8,27 @@ from .scheduling import (
     EnergyAwareScheduler,
     SchedulingDecision,
 )
+from .advanced_scheduling import (
+    DARC_DEScheduler,
+    GAScheduler,
+    GaleShapleyScheduler,
+    IDOScheduler,
+    LyapunovScheduler,
+    MLRLScheduler,
+    PSGScheduler,
+    PSOScheduler,
+)
 
 __all__ = [
     "BaselineScheduler",
+    "DARC_DEScheduler",
+    "GAScheduler",
+    "GaleShapleyScheduler",
+    "IDOScheduler",
+    "LyapunovScheduler",
+    "MLRLScheduler",
+    "PSGScheduler",
+    "PSOScheduler",
     "CongestionAnalyzer",
     "CongestionAwareScheduler",
     "EnergyAwareCongestionScheduler",

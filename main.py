@@ -3,7 +3,7 @@
 import sys
 
 from config import NetworkConfig
-from experiments import ExperimentRunner, ResultProcessor
+from experiments import ExperimentRunner, ResultProcessor, SCHEDULER_SPECS
 from services import CongestionAwareScheduler, CongestionReport, EnergyAwareCongestionScheduler
 from simulation import RoundReport, Simulator
 
@@ -185,36 +185,24 @@ def _print_congestion_status(title: str, congestion: CongestionReport) -> None:
 
 
 def _run_comparison() -> None:
-    """Run both policies on independent, identical deterministic workloads."""
+    """Run every registered policy on independent, identical workloads."""
     config = NetworkConfig.stress_test()
-    baseline = Simulator(config)
-    aware = Simulator(config)
-    energy_aware = Simulator(config)
-    baseline_reports = baseline.run()
-    aware_reports = aware.run(CongestionAwareScheduler(config.congestion_threshold))
-    energy_reports = energy_aware.run(
-        EnergyAwareCongestionScheduler(
-            config.congestion_threshold,
-            config.w_congestion,
-            config.w_energy,
-            config.min_operational_energy,
-        )
-    )
-    baseline_summary = _summary(baseline)
-    aware_summary = _summary(aware)
-    energy_summary = _summary(energy_aware)
+    simulators = {}
+    for scheduler_name, scheduler_class in SCHEDULER_SPECS:
+        simulator = Simulator(config)
+        simulator.run(scheduler_class)
+        simulators[scheduler_name] = simulator
 
-    print("BASELINE VS CONGESTION-AWARE VS ENERGY-AWARE")
-    print("============================================")
+    summaries = {name: _summary(simulator) for name, simulator in simulators.items()}
+    print("SCHEDULER COMPARISON")
+    print("====================")
     print("Same stress configuration and seed used for all schedulers.")
-    print("\nMetric                         Baseline    Congestion-Aware    Energy-Aware")
-    print("-------------------------------------------------------------------------")
-    for label in baseline_summary:
-        print(
-            f"{label:<30} {baseline_summary[label]:>9}    "
-            f"{aware_summary[label]:>16}    {energy_summary[label]:>12}"
-        )
-    print(f"\nRounds compared: {len(baseline_reports)}")
+    names = tuple(summaries)
+    print("\nMetric" + "".join(f"{name:>27}" for name in names))
+    print("-" * (6 + 27 * len(names)))
+    for label in next(iter(summaries.values())):
+        print(f"{label:<28}" + "".join(f"{summaries[name][label]:>27}" for name in names))
+    print(f"\nRounds compared: {config.num_rounds}")
 
 
 def _summary(simulator: Simulator) -> dict[str, str]:

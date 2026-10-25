@@ -46,6 +46,8 @@ class IoTDevice:
             task_id=task_id,
             source_device_id=self.device_id,
             creation_round=creation_round,
+            priority=1 + self.generated_task_count % 3,
+            deadline_round=creation_round + 2 + self.generated_task_count % 3,
         )
         self.created_tasks.append(task)
         self.generated_task_count += 1

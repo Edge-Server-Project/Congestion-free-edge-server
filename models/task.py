@@ -28,6 +28,9 @@ class Task:
     baseline_candidate_node_id: str | None = None
     assigned_edge_node_id: str | None = None
     drop_reason: str | None = None
+    priority: int = 1
+    deadline_round: int | None = None
+    completion_round: int | None = None
 
     def __post_init__(self) -> None:
         """Validate immutable task identity and its initial lifecycle state."""
@@ -37,6 +40,26 @@ class Task:
             raise ValueError("source_device_id must not be empty")
         if self.creation_round <= 0:
             raise ValueError("creation_round must be greater than zero")
+        if isinstance(self.priority, bool) or not isinstance(self.priority, int) or self.priority < 0:
+            raise ValueError("priority must be a non-negative integer")
+        if self.deadline_round is not None and (
+            isinstance(self.deadline_round, bool)
+            or not isinstance(self.deadline_round, int)
+            or self.deadline_round < self.creation_round
+        ):
+            raise ValueError("deadline_round must be an integer at or after creation_round")
+
+    @property
+    def delay_rounds(self) -> int | None:
+        """Return inclusive generation-to-completion delay in simulation rounds."""
+        return None if self.completion_round is None else self.completion_round - self.creation_round + 1
+
+    @property
+    def deadline_lateness(self) -> int | None:
+        """Return positive completion lateness, or None before task completion."""
+        if self.completion_round is None or self.deadline_round is None:
+            return None
+        return max(0, self.completion_round - self.deadline_round)
 
     def assign_to(self, edge_node_id: str) -> None:
         """Associate this task with an edge node before it enters a queue."""
